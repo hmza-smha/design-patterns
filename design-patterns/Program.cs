@@ -1,5 +1,6 @@
 ﻿using ConsoleApp1.Factory.Resturents;
 using design_patterns.Builder;
+using design_patterns.Prototype;
 
 /* 
  * Factory (Creational)
@@ -33,5 +34,20 @@ using design_patterns.Builder;
 
 
 
+/*
+ * Prototype (Creational)
+ */
+
+//Bus b1 = new Bus();
+//b1.brand = "BMW";
+//b1.color = "Red";
+
+//Bus b2 = (Bus) b1.Clone();
+//b2.color = "blue";
+
+//Console.WriteLine("b1 Id: " + b1.GetId());
+//Console.WriteLine("b2 Id: " + b2.GetId());
+//Console.WriteLine("b1 Color: " + b1.color);
+//Console.WriteLine("b2 Color: " + b2.color);
 
 Console.ReadLine();
