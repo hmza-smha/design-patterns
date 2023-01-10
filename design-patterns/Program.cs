@@ -2,6 +2,7 @@
 using design_patterns.Behavioral.Chain_of_Responsibility;
 using design_patterns.Behavioral.Chain_of_Responsibility.Handlers;
 using design_patterns.Behavioral.Command.Example1;
+using design_patterns.Behavioral.Command.Example2;
 using design_patterns.Builder;
 
 /* 
@@ -73,15 +74,22 @@ using design_patterns.Builder;
  */
 
 // Example 1
-RemoteControl remote = new RemoteControl(); 
-Television tv = new Television();
+//RemoteControl remote = new RemoteControl(); 
+//Television tv = new Television();
 
-remote.AddCommand(new TurnOnTelevision(tv));
-remote.AddCommand(new TurnOffTelevision(tv));
+//remote.AddCommand(new TurnOnTelevision(tv));
+//remote.AddCommand(new TurnOffTelevision(tv));
 
-remote.OnButtonPressed(0);
-remote.OnButtonPressed(1);
+//remote.OnButtonPressed(0);
+//remote.OnButtonPressed(1);
 
+
+// Example 2
+// Calculator calc = new Calculator();
+// calc.ExcuteCommand(new AddCommand(10));
+// Console.WriteLine(calc.value);
+// calc.UndoCommand();
+// Console.WriteLine(calc.value);
 
 
 
