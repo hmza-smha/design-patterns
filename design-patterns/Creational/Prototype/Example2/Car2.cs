@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace design_patterns.Prototype
+namespace design_patterns.Creational.Prototype.Example2
 {
     internal class Car2 : Vehicle
     {
@@ -12,7 +12,7 @@ namespace design_patterns.Prototype
 
         public Car2(Car2 car2) : base(car2)
         {
-            this._doors = car2._doors;
+            _doors = car2._doors;
         }
 
         public override Car2 Clone()

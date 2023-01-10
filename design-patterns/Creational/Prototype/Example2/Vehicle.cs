@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace design_patterns.Prototype
+namespace design_patterns.Creational.Prototype.Example2
 {
     /*
      * Prototype Design 2 (Vehicle, Car1, Car2 classes)

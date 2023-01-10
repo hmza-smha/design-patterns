@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace design_patterns.Prototype
+namespace design_patterns.Creational.Prototype.Example1
 {
     /*
      * Prototype Design 1 (only Bus class)
