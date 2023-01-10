@@ -1,4 +1,6 @@
 ﻿using ConsoleApp1.Factory.Resturents;
+using design_patterns.Behavioral.Chain_of_Responsibility;
+using design_patterns.Behavioral.Chain_of_Responsibility.Handlers;
 using design_patterns.Builder;
 using design_patterns.Prototype;
 
@@ -33,7 +35,6 @@ using design_patterns.Prototype;
 //bmw.PrintInfo();
 
 
-
 /*
  * Prototype (Creational)
  */
@@ -49,5 +50,22 @@ using design_patterns.Prototype;
 //Console.WriteLine("b2 Id: " + b2.GetId());
 //Console.WriteLine("b1 Color: " + b1.color);
 //Console.WriteLine("b2 Color: " + b2.color);
+
+
+/*
+ * Chain of Responsibility (Behavioral)
+ */
+
+// Database db = new Database();
+// Handler handler = new UserExistsHandler(db);
+// handler.SetNextHandler(new ValidatePasswordHandler(db))
+//     .SetNextHandler(new CheckRoleHandler(db));
+
+// UserExistsHandler -> ValidatePasswordHandler -> CheckRoleHandler -> null
+
+// AuthService service = new AuthService(handler);
+// // service.Login("admin", "admin");
+// // service.Login("user", "user");
+
 
 Console.ReadLine();
