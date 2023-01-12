@@ -4,6 +4,7 @@ using design_patterns.Behavioral.Chain_of_Responsibility.Handlers;
 using design_patterns.Behavioral.Command.Example1;
 using design_patterns.Behavioral.Command.Example2;
 using design_patterns.Behavioral.Memento;
+using design_patterns.Behavioral.Observer;
 using design_patterns.Builder;
 
 /* 
@@ -97,27 +98,34 @@ using design_patterns.Builder;
  * Memento (Behavioural)
  */
 
-Editor editor = new Editor();
+//Editor editor = new Editor();
 
-editor.Write("H");
-editor.Write("Ha");
-editor.Write("Ham");
-editor.Write("HamZ");
-editor.Write("HamZa");
+//editor.Write("H");
+//editor.Write("Ha");
+//editor.Write("Ham");
+//editor.Write("HamZ");
+//editor.Write("HamZa");
 
-Console.WriteLine("Current Text: " + editor.textarea.Text);
+//Console.WriteLine("Current Text: " + editor.textarea.Text);
 
-editor.Undo();
-Console.WriteLine("Undo #1 Text: " + editor.textarea.Text);
+//editor.Undo();
+//Console.WriteLine("Undo #1 Text: " + editor.textarea.Text);
 
-editor.Undo();
-Console.WriteLine("Undo #2 Text: " + editor.textarea.Text);
+//editor.Undo();
+//Console.WriteLine("Undo #2 Text: " + editor.textarea.Text);
 
-editor.Redo();
-Console.WriteLine("Redo #1 Text: " + editor.textarea.Text);
+//editor.Redo();
+//Console.WriteLine("Redo #1 Text: " + editor.textarea.Text);
 
 
+/*
+ * Observer (Behavioral)
+ */
 
+var service = new Store().GetNotificationService();
+service.Subscribe(new EmailListener("Customer #1"));
+service.Subscribe(new EmailListener("Customer #2"));
+service.notify();
 
 
 
