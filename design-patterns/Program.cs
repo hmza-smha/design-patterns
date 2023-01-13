@@ -6,6 +6,7 @@ using design_patterns.Behavioral.Command.Example2;
 using design_patterns.Behavioral.Memento;
 using design_patterns.Behavioral.Observer;
 using design_patterns.Builder;
+using design_patterns.Structural;
 
 /* 
  * Factory (Creational)
@@ -122,11 +123,25 @@ using design_patterns.Builder;
  * Observer (Behavioral)
  */
 
-var service = new Store().GetNotificationService();
-service.Subscribe(new EmailListener("Customer #1"));
-service.Subscribe(new EmailListener("Customer #2"));
-service.notify();
+//var service = new Store().GetNotificationService();
+//service.Subscribe(new EmailListener("Customer #1"));
+//service.Subscribe(new EmailListener("Customer #2"));
+//service.notify();
 
+
+/*
+ * Adapter (Structural)
+ */
+
+IVehicle car = new design_patterns.Structural.Car();
+car.Play();
+
+Console.WriteLine();
+Console.WriteLine();
+
+IVehicle bicycle = new BicycleAdapter(new Bicycle());
+
+bicycle.Play();
 
 
 
