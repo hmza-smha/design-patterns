@@ -46,7 +46,11 @@ Passes a request along a chain of handlers; each handler either processes the re
 # Bonus: Other Notable Patterns
 While not always in the top tier, these are also widely used:
 
-### Dependency Injection (DI) – Not a formal GoF pattern but essential in modern frameworks like Spring, Angular, etc.
-### Repository Pattern – Used to separate data access logic from business logic.
-### Service Locator – Offers a way to get services without tight coupling.
-### Flyweight – Minimizes memory usage by sharing as much data as possible with similar objects.
+### Dependency Injection (DI) 
+Not a formal GoF pattern but essential in modern frameworks like Spring, Angular, etc.
+### Repository Pattern 
+Used to separate data access logic from business logic.
+### Service Locator
+Offers a way to get services without tight coupling.
+### Flyweight 
+Minimizes memory usage by sharing as much data as possible with similar objects.
